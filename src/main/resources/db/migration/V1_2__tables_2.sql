@@ -1,0 +1,8 @@
+CREATE TABLE IF NOT EXISTS `my_table2` (
+  `id` varchar(36) NOT NULL,
+  `version` bigint(20) NOT NULL DEFAULT 0,
+  `created_at` TIMESTAMP(6) NOT NULL DEFAULT CURRENT_TIMESTAMP(6),
+  `updated_at` TIMESTAMP(6) NOT NULL DEFAULT CURRENT_TIMESTAMP(6),
+  `data` CLOB NOT NULL,
+  PRIMARY KEY (`id`)
+);
